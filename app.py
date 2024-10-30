@@ -23,43 +23,49 @@ st.set_page_config(
 # סטיילינג משופר
 st.markdown("""
     <style>
-        .main {
-            direction: rtl;
-            text-align: right;
-        }
-        .stButton>button {
-            width: 100%;
-            margin: 5px 0;
-            border-radius: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px;
-            transition: all 0.3s;
-        }
-        .stButton>button:hover {
-            background-color: #45a049;
-            transform: scale(1.02);
-        }
-        .css-1d391kg {
-            padding: 2rem 1rem;
-        }
-        .metric-card {
-            background-color: #f1f1f1;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .st-emotion-cache-1wivap2 {
-            direction: rtl;
-        }
-        .custom-tab {
-            background-color: #e6f3ff;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-    </style>
+.main {
+    direction: rtl;
+    text-align: right;
+}
+
+.stButton > button {
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+.stButton > button:hover {
+    background-color: #45a049;
+    transform: scale(1.02);
+}
+
+.css-1d391kg {
+    padding: 2rem 1rem;
+}
+
+.metric-card {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.st-emotion-cache-1wivap2 {
+    direction: rtl;
+}
+
+.custom-tab {
+    background-color: #e6f3ff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+</style>
 """, unsafe_allow_html=True)
 
 # טעינת משתני הסביבה
