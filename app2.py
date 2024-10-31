@@ -200,6 +200,9 @@ def send_message(message_type="regular", custom_message=None):
 💪 רפואה שלימה ובריאות איתנה
 
 🌟 נתנאל (נתי) בן רונית עליזה
+💵 פרנסה בשפע בקלות ובשמחה
+
+בתוך שאר בית ישראל הזקוקים לישועה בחן בחסד וברחמים בקרוב.
 -----------------"""
     send_text_message(intro_message)
     
