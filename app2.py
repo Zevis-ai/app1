@@ -238,7 +238,7 @@ def send_message(message_type="regular", custom_message=None):
 load_from_file()
 
 # כותרת ראשית
-st.title("🙏 מערכת מזמור לתודה")
+st.title("🙏 מערכת מזמור-לתודה")
 
 # סרגל צד משופר
 with st.sidebar:
