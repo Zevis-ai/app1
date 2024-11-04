@@ -177,7 +177,7 @@ def send_message(message_type="regular", custom_message=None):
 📚 הצלחה בלימודים
 
 🌟 נתנאל איתמר בן מירה
-💍 זיווג טוב ומתאים
+📚 הצלחה מרובה בלימודי תכנות ובישוב הדעת
 
 🌟 נחום זאב בן מרים
 📚 הצלחה בלימודים
@@ -189,7 +189,7 @@ def send_message(message_type="regular", custom_message=None):
 💍 זיווג טוב ומתאים
 
 🌟 משה בן רֵנָה
-💍 זיווג טוב ומתאים
+💵 פרנסה בשפע בקלות ובשמחה
 
 🌟 רונן בן מירה
 💵 פרנסה בשפע בקלות ובשמחה
