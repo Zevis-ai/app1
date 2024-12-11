@@ -225,7 +225,7 @@ def send_message(message_type="regular", custom_message=None):
 💍 זיווג טוב ומתאים בקלות ובשמחה
 
 🌟 משה בן רֵנָה
-💵 פרנסה בשפע בקלות ובשמחה
+💍 זיווג טוב ומתאים בקלות ובשמחה
 
 🌟 רונן בן מירה
 💵 פרנסה בשפע בקלות ובשמחה
