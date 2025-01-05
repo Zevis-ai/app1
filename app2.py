@@ -228,6 +228,10 @@ def send_message(message_type="regular", custom_message=None):
     response = requests.post(API_URL, json=payload, headers=HEADERS)
     
     if response.status_code == 200:
+        if message_type == "regular":  # רק אם זו הודעה רגילה
+            st.session_state.current_day += 1
+            if st.session_state.current_day > 40:  # בדיקה אם הגענו ליום 40
+                st.session_state.current_day = 1
         st.session_state.last_sent = current_time
         st.session_state.message_history.append({
             'timestamp': current_time.isoformat(),
