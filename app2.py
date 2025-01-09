@@ -152,23 +152,45 @@ def send_text_message(message):
 
 def send_text_message2(message):
     """שליחת הודעת טקסט פשוטה"""
-    payload = {
-        "chatId": GROUP_ID,
-        "message": message,
-        "mentions": ["972553072352@c.us"]
-    }
-    
-    # שימוש בנקודת קצה שונה לשליחת הודעת טקסט
-    text_api_url = API_URL.replace("sendPoll", "sendMessage")
-    response = requests.post(text_api_url, json=payload, headers=HEADERS)
-    return response
+    try:
+        print("מתחיל שליחת הודעה...")
+        print(f"GROUP_ID: {GROUP_ID}")
+        print(f"הודעה: {message}")
+        
+        payload = {
+            "chatId": GROUP_ID,
+            "message": message,
+            "mentions": ["972553072352@c.us"]
+        }
+        print(f"Payload: {payload}")
+        
+        # שימוש בנקודת קצה שונה לשליחת הודעת טקסט
+        text_api_url = API_URL.replace("sendPoll", "sendMessage")
+        print(f"URL: {text_api_url}")
+        print(f"Headers: {HEADERS}")
+        
+        response = requests.post(text_api_url, json=payload, headers=HEADERS)
+        print(f"Status Code: {response.status_code}")
+        print(f"Response: {response.text}")
+        
+        return response
+    except Exception as e:
+        print(f"שגיאה בשליחת ההודעה: {str(e)}")
+        raise e
 
 def send_message2(message_type="regular", custom_message=None):
     """שליחת הודעה לקבוצה"""
-    current_time = datetime.now()
-    # נשתמש בפורמט המיוחד של Green API לתיוג
-    message = """ @972553072352 שלום! יש לנו עדכון חשוב! """
-    send_text_message2(message)
+    try:
+        current_time = datetime.now()
+        print(f"זמן נוכחי: {current_time}")
+        message = """ @972553072352 שלום! יש לנו עדכון חשוב! """
+        print("מנסה לשלוח הודעה...")
+        response = send_text_message2(message)
+        print("ההודעה נשלחה בהצלחה")
+        return response
+    except Exception as e:
+        print(f"שגיאה בפונקציה send_message2: {str(e)}")
+        raise e
 
 def send_message(message_type="regular", custom_message=None):
     """שליחת הודעה לקבוצה"""
