@@ -150,11 +150,25 @@ def send_text_message(message):
     response = requests.post(text_api_url, json=payload, headers=HEADERS)
     return response
 
+def send_text_message2(message):
+    """שליחת הודעת טקסט פשוטה"""
+    payload = {
+        "chatId": GROUP_ID,
+        "message": message,
+        "mentions": ["972553072352@c.us"]
+    }
+    
+    # שימוש בנקודת קצה שונה לשליחת הודעת טקסט
+    text_api_url = API_URL.replace("sendPoll", "sendMessage")
+    response = requests.post(text_api_url, json=payload, headers=HEADERS)
+    return response
+
 def send_message2(message_type="regular", custom_message=None):
     """שליחת הודעה לקבוצה"""
     current_time = datetime.now()
-    message = """@972553072352"""
-    send_text_message(message)
+    # נשתמש בפורמט המיוחד של Green API לתיוג
+    message = """ @972553072352 שלום! יש לנו עדכון חשוב! """
+    send_text_message2(message)
 
 def send_message(message_type="regular", custom_message=None):
     """שליחת הודעה לקבוצה"""
