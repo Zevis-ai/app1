@@ -153,7 +153,11 @@ def send_text_message(message):
 def send_message2(message_type="regular", custom_message=None):
     """שליחת הודעה לקבוצה"""
     current_time = datetime.now()
-    message = "@אביגדור כהן מכללת Jbh @אריאל משעלי לימודים Jbh @הילל אהרוני לימודים Jbh @זאבי פרידמן לימודים Jbh @חגי חממי לימודים Jbh @יואל רוזנבליט מכללת Jbh @מנחם הלה לימודים Jbh @משה אבייב @נועם מכללה Jbh @נתי פוואר לימודים Jbh @רונן @שי פרץ לימודים Jbh @שריה יצחק Jbh"
+    message = """
+
+    @c.us_972553072352 זאבי פרידמן
+
+"""
     send_text_message(message)
 
 def send_message(message_type="regular", custom_message=None):
