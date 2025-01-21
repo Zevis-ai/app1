@@ -182,7 +182,6 @@ def send_message(message_type="regular", custom_message=None):
 -----------------
 
 🌟 הלל בן חמדה
-🌟 נחום זאב בן מרים
 🌟 יאיר בן ספיר
 📓 "הצלחה בלימודים"
 
@@ -197,6 +196,7 @@ def send_message(message_type="regular", custom_message=None):
 🌟 משה בן רנה
 🌟 נועם יששכר בן שולמית
 🌟 אביגדור יוסף בן כוכבה ציפורה
+🌟 חיים מאיר בן רחל
 💎 "זיווג טוב ומתאים בקלות ובשמחה"
 
 🌟 איתמר בן נורית
