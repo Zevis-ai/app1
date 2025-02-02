@@ -188,6 +188,7 @@ def send_message(message_type="regular", custom_message=None):
 🌟 רונן בן מירה
 🌟 מנחם בן אסתר
 🌟 נתנאל בן רונית עליזה
+🌟 אלחנן יששכר בן ורד  ‼️‼️
 💵 "פרנסה טובה בשפע בקלות ובשמחה"
 
 🌟 נתנאל איתמר בן מירה
@@ -196,7 +197,7 @@ def send_message(message_type="regular", custom_message=None):
 🌟 משה בן רנה
 🌟 נועם יששכר בן שולמית
 🌟 אביגדור יוסף בן כוכבה ציפורה
-🌟 חיים מאיר בן רחל
+🌟 חיים מאיר בן רחל ‼️‼️
 💎 "זיווג טוב ומתאים בקלות ובשמחה"
 
 🌟 איתמר בן נורית
